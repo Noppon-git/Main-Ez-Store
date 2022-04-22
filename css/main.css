@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    overflow:scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+.sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background-color: rgba(255,255,255,0.95);
+    transition: 0.5s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    border : 1px solid rgba(0, 0, 0, 0.3);
+}
+     .logo{
+     border-bottom: 1px solid rgba(0,0,0,0.3);
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: 700;
+     }
+ 
+     .pages{
+     height: 100px;
+     overflow: scroll;
+     overflow-x:hidden ;
+     }
+ 
+     .nav{
+     justify-content: space-between;
+     }
+
+ 
+ .main-content{
+    position: relative;
+    width: 85%;
+    left: 15%;
+}
+
+#block {
+    height: 100%;
+}
+  
+#block #blocks {
+    height: 100%;
+}   
+.tab-content {
+    display: contents;
+  }
+ 
+/*  .gjs-pn-panel{
+    position: relative;
+ }
+ .gjs-cv-canvas{
+    width  : 100%;
+    height : 100%;
+    top: 0;
+ } */
+/*  .gjs-block-label{
+     display: none;     /* ไม่แสดงชื่อ label 
+ } */
+ 
+ /* Theminh */
+ .gjs-one-bg{
+     background-color: #fff;
+ }
+ 
+ .gjs-two-color{
+     color: #030303; /* #9ca8bb */
+ }
+ 
+ .gjs-three-bg{
+     background-color: #1e8fe1;
+     color: #fff;
+ }
+ 
+ .gjs-four-color, 
+ .gjs-four-color-h:hover{
+     color: #1e8fe1;
+ }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Store</title>
+
+    <link rel = "stylesheet" href="../../css/lib/bootstrap.min.css" />
+   <!--  <script src="js/lib/popper.min.js"></script> -->
+    <script src="../../js/lib/bootstrap.min.js"></script>
+
+    <script src="../../js/lib/grapes.min.js"></script>
+    <link rel="stylesheet" href="../../css/lib/grapes.min.css" />
+
+    <script src = "../../js/lib/grapesjs-blocks-basic.js"></script>
+
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+
+    <link 
+    rel ="stylesheet" 
+    href ="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.34/css/grapes.min.css"
+/>
+    <!-- Add Style and Script for Present Webpage Builder -->
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- <div id = "editor">
+            <p> Testing Editor using GrapesJS </p>
+        </div> -->
+<div id = "navbar" class = "sidenav d-flex flex-column overflow-scroll"> 
+    <nav class = "navbar navbar-light">
+        <div class = "container-fluid">
+            <span class = "navbar-brand mb-0 h3 logo"> Eazy Store</span>
+        </div>
+    </nav>
+    <div class = "my-2 d-flex flex-column">
+        <div class="row">
+            <div class="col-6" style="padding: 0%; margin-left: 20px;">
+                <button type = "button" class = "btn btn-outline-secondary " style="padding: 5px;  margin-bottom: 3%;">
+                    <i class="bi bi-file-earmark-plus"></i> Add Page
+                </button>
+            </div>
+            <div class="col-4" style="padding: 0%;">
+                <button type = "button" class = "btn btn-outline-secondary " 
+                style="padding-left: 10px; padding-right: 10px;  margin-bottom: 0px;padding-bottom: 5px;padding-top: 5px;" 
+                onclick="getHtmlCss()">
+                    <!-- <i class="bi bi-file-earmark-plus"></i> --> save
+                </button>
+            </div>
+        </div>
+        <ul class = "list-group pages">
+            <li class = "list-group-item d-flex justify-content-between"> 
+                Home
+                <div class = "m-2">
+                    <i class = "bi bi-pencil-fill"></i>
+                    <i class = "bi bi-trash"></i>
+                </div>
+            </li>
+            <li class = "list-group-item d-flex justify-content-between"> 
+                About US
+                <div class = "m-2">
+                    <i class = "bi bi-pencil-fill"></i>
+                    <i class = "bi bi-trash"></i>
+                </div>
+            </li>
+            <li class = "list-group-item d-flex justify-content-between"> 
+                Contact US
+                <div class = "m-2">
+                    <i class = "bi bi-pencil-fill"></i>
+                    <i class = "bi bi-trash"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+
+        <ul class = "nav nav-tabs" id ="myTab" role ="tablist">
+            <li class = "nav-item " role = presentation>
+                <button 
+                    class = "nav-link active"
+                    id = "block-tab"
+                    data-bs-toggle = "tab"
+                    data-bs-target = "#block"
+                    type = "button"
+                    role = "tab"
+                    aria-selected="true"
+                    aria-controls="block"
+                >
+                    <i class = "bi bi-grid-fill"></i>
+                </button>
+            </li>
+            <li class = "nav-item" role = presentation>
+                <button 
+                    class = "nav-link "
+                    id = "trait-tab"
+                    data-bs-toggle = "tab"
+                    data-bs-target = "#trait"
+                    type = "button"
+                    role = "tab"
+                    aria-selected="false"
+                    aria-controls="trait"
+                >
+                    <i class = "bi bi-layers-fill"></i>
+                </button>
+            </li>
+            <li class = "nav-item" role = presentation>
+                <button 
+                    class = "nav-link "
+                    id = "style-tab"
+                    data-bs-toggle = "tab"
+                    data-bs-target = "#style"
+                    type ="button"
+                    role ="tab"
+                    aria-selected="false"
+                    aria-controls="style"
+                >
+                    <i class = "bi bi-palette-fill"></i>
+                </button>
+            </li>
+        </ul>
+        <div class = "tab-content">
+            <div class="tab-pane fade show active" 
+                 id ="block" 
+                 role="tabpanel"
+                 aria-labelledby="block-tab"
+            >
+                <div id ="blocks"></div>
+            </div>
+            <div class="tab-pane fade " 
+                id ="trait" 
+                role="tabpanel"
+                aria-labelledby="trait-tab"
+            >
+                <div id="layer-container"></div>
+            </div>
+            <div class="tab-pane fade " 
+                id ="style" 
+                role="tabpanel"
+                aria-labelledby="style-tab"
+            >
+                <div id="style-container"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "main-content"> 
+<!--     <nav class="navbar navbar-light">
+        <div class = "container-fluid">
+            <div class = "panel__devices"></div>
+            <div class = "panel__basic-actions"></div>
+        </div>
+    </nav> -->
+    <div id ="editor"></div>  
+    </div>
+  <script type="text/javascript" src ="../../js/main.js"></script> 
+</body>
+</html>
